@@ -244,6 +244,6 @@ def calculate_ticket_price(age: int) -> float:
     if age < 12:
         return 5.0
     # BUG: Condition checks age < 65 instead of age >= 65
-    elif age < 65:
+    elif age >= 65:
         return 7.0
     return 12.0
